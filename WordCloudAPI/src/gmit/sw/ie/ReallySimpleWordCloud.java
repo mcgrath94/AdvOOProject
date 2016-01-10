@@ -22,7 +22,7 @@ public class ReallySimpleWordCloud{
 	font = new Font(Font.MONOSPACED, Font.PLAIN, 22);
 	graphics.setFont(font);
 	graphics.setColor(Color.blue);
-	graphics.drawString("2012 Assignment", 40, 180);
+	graphics.drawString("2015 Assignment", 40, 180);
 
 	graphics.dispose();
 	ImageIO.write(image, "png", new File("image.png"));

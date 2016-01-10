@@ -15,7 +15,6 @@ import gmit.sw.ie.*;
 public class Tests{
 	
 	private StopWords testSet;
-	private StopWords testSet1;
 	
 	@Before
 	@After

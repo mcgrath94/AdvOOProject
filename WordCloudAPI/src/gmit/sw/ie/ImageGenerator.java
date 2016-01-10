@@ -28,13 +28,12 @@ public class ImageGenerator{
 	
 	private void generateImage(String imagename) throws Exception {
 		
-		BufferedImage img = new BufferedImage(1080, 1080, BufferedImage.TYPE_4BYTE_ABGR);
+		BufferedImage img = new BufferedImage(800, 800, BufferedImage.TYPE_4BYTE_ABGR);
 		graphics = img.getGraphics();
 		
 		Map<String, Integer> iMap = new HashMap<String, Integer>();
 		iMap = parser.getWordMap();
 		int x, y=50;
-		//x = (int) Math.random();
 		for(String word : iMap.keySet())
 		{
 			
@@ -47,7 +46,7 @@ public class ImageGenerator{
 		}
 		
 		graphics.dispose();
-		ImageIO.write(img, "png", new File("test1.png"));
+		ImageIO.write(img, "png", new File("test.png"));
 	}
 	
 	private int wordWrite(String word, int freq, int x, int y)
